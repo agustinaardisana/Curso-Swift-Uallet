@@ -19,8 +19,6 @@
 		B3410BBF27F3963B001E2AF0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3410BBD27F3963B001E2AF0 /* HomeViewController.xib */; };
 		B3410BC227F3969B001E2AF0 /* DashboardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BC027F3969B001E2AF0 /* DashboardsViewController.swift */; };
 		B3410BC327F3969B001E2AF0 /* DashboardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3410BC127F3969B001E2AF0 /* DashboardsViewController.xib */; };
-		B3410BC627F396AB001E2AF0 /* WalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BC427F396AB001E2AF0 /* WalletsViewController.swift */; };
-		B3410BC727F396AB001E2AF0 /* WalletsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3410BC527F396AB001E2AF0 /* WalletsViewController.xib */; };
 		B3410BCA27F396B8001E2AF0 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BC827F396B8001E2AF0 /* InfoViewController.swift */; };
 		B3410BCB27F396B8001E2AF0 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3410BC927F396B8001E2AF0 /* InfoViewController.xib */; };
 		B3410BCD27F4CEC4001E2AF0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BCC27F4CEC4001E2AF0 /* Storage.swift */; };
@@ -33,6 +31,10 @@
 		B3DB9AF027FCBC4900E12021 /* Monedas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB9AEF27FCBC4900E12021 /* Monedas.swift */; };
 		B3DB9AF227FCC24500E12021 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB9AF127FCC24500E12021 /* Wallet.swift */; };
 		B3DB9AF427FCC4A100E12021 /* WalletsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB9AF327FCC4A100E12021 /* WalletsStorage.swift */; };
+		B3DB9AF727FCD6F500E12021 /* WalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB9AF527FCD6F500E12021 /* WalletsViewController.swift */; };
+		B3DB9AF827FCD6F500E12021 /* WalletsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3DB9AF627FCD6F500E12021 /* WalletsViewController.xib */; };
+		B3DB9AFB27FCD94500E12021 /* WalletViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB9AF927FCD94500E12021 /* WalletViewCell.swift */; };
+		B3DB9AFC27FCD94500E12021 /* WalletViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3DB9AFA27FCD94500E12021 /* WalletViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +52,6 @@
 		B3410BBD27F3963B001E2AF0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		B3410BC027F3969B001E2AF0 /* DashboardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardsViewController.swift; sourceTree = "<group>"; };
 		B3410BC127F3969B001E2AF0 /* DashboardsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardsViewController.xib; sourceTree = "<group>"; };
-		B3410BC427F396AB001E2AF0 /* WalletsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsViewController.swift; sourceTree = "<group>"; };
-		B3410BC527F396AB001E2AF0 /* WalletsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletsViewController.xib; sourceTree = "<group>"; };
 		B3410BC827F396B8001E2AF0 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		B3410BC927F396B8001E2AF0 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		B3410BCC27F4CEC4001E2AF0 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
@@ -64,6 +64,10 @@
 		B3DB9AEF27FCBC4900E12021 /* Monedas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monedas.swift; sourceTree = "<group>"; };
 		B3DB9AF127FCC24500E12021 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		B3DB9AF327FCC4A100E12021 /* WalletsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsStorage.swift; sourceTree = "<group>"; };
+		B3DB9AF527FCD6F500E12021 /* WalletsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsViewController.swift; sourceTree = "<group>"; };
+		B3DB9AF627FCD6F500E12021 /* WalletsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletsViewController.xib; sourceTree = "<group>"; };
+		B3DB9AF927FCD94500E12021 /* WalletViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewCell.swift; sourceTree = "<group>"; };
+		B3DB9AFA27FCD94500E12021 /* WalletViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletViewCell.xib; sourceTree = "<group>"; };
 		D94EFDCDDECA1654FDF453B8 /* Pods_Uallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC604E0C181A9EAE69CA4CCF /* Pods-Uallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uallet.debug.xcconfig"; path = "Target Support Files/Pods-Uallet/Pods-Uallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,18 +165,20 @@
 			isa = PBXGroup;
 			children = (
 				B3DB9AED27FB72A500E12021 /* Base */,
-				B3410BC027F3969B001E2AF0 /* DashboardsViewController.swift */,
-				B3410BC127F3969B001E2AF0 /* DashboardsViewController.xib */,
-				B3410BC427F396AB001E2AF0 /* WalletsViewController.swift */,
-				B3410BC527F396AB001E2AF0 /* WalletsViewController.xib */,
-				B3410BC827F396B8001E2AF0 /* InfoViewController.swift */,
-				B3410BC927F396B8001E2AF0 /* InfoViewController.xib */,
+				B3410BCE27F4E176001E2AF0 /* MainTabViewController.swift */,
+				B3410BB127EE4D13001E2AF0 /* LaunchScreen.storyboard */,
 				B3410BBC27F3963B001E2AF0 /* HomeViewController.swift */,
 				B3410BBD27F3963B001E2AF0 /* HomeViewController.xib */,
-				B3410BCE27F4E176001E2AF0 /* MainTabViewController.swift */,
+				B3410BC027F3969B001E2AF0 /* DashboardsViewController.swift */,
+				B3410BC127F3969B001E2AF0 /* DashboardsViewController.xib */,
+				B3410BC827F396B8001E2AF0 /* InfoViewController.swift */,
+				B3410BC927F396B8001E2AF0 /* InfoViewController.xib */,
+				B3DB9AF527FCD6F500E12021 /* WalletsViewController.swift */,
+				B3DB9AF627FCD6F500E12021 /* WalletsViewController.xib */,
 				B3410BD227F4F5AC001E2AF0 /* NuevaWalletViewController.swift */,
 				B3410BD327F4F5AC001E2AF0 /* NuevaWalletViewController.xib */,
-				B3410BB127EE4D13001E2AF0 /* LaunchScreen.storyboard */,
+				B3DB9AF927FCD94500E12021 /* WalletViewCell.swift */,
+				B3DB9AFA27FCD94500E12021 /* WalletViewCell.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -258,12 +264,13 @@
 			files = (
 				B3410BB327EE4D13001E2AF0 /* LaunchScreen.storyboard in Resources */,
 				B3410BC327F3969B001E2AF0 /* DashboardsViewController.xib in Resources */,
+				B3DB9AFC27FCD94500E12021 /* WalletViewCell.xib in Resources */,
 				B3410BB027EE4D13001E2AF0 /* Assets.xcassets in Resources */,
 				B3410BAE27EE4D12001E2AF0 /* LoginViewController.storyboard in Resources */,
 				B3410BBF27F3963B001E2AF0 /* HomeViewController.xib in Resources */,
+				B3DB9AF827FCD6F500E12021 /* WalletsViewController.xib in Resources */,
 				B3410BD527F4F5AC001E2AF0 /* NuevaWalletViewController.xib in Resources */,
 				B3410BCB27F396B8001E2AF0 /* InfoViewController.xib in Resources */,
-				B3410BC727F396AB001E2AF0 /* WalletsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,13 +332,14 @@
 				B3410BA927EE4D12001E2AF0 /* SceneDelegate.swift in Sources */,
 				B3410BD427F4F5AC001E2AF0 /* NuevaWalletViewController.swift in Sources */,
 				B3DB9AEB27FB71FE00E12021 /* APICotizacionesPromises.swift in Sources */,
+				B3DB9AF727FCD6F500E12021 /* WalletsViewController.swift in Sources */,
 				B3410BCF27F4E176001E2AF0 /* MainTabViewController.swift in Sources */,
 				B3675EF227F79C73009D87E3 /* APIBitcoinStruct.swift in Sources */,
 				B3410BCD27F4CEC4001E2AF0 /* Storage.swift in Sources */,
+				B3DB9AFB27FCD94500E12021 /* WalletViewCell.swift in Sources */,
 				B3410BC227F3969B001E2AF0 /* DashboardsViewController.swift in Sources */,
 				B3DB9AF027FCBC4900E12021 /* Monedas.swift in Sources */,
 				B3410BCA27F396B8001E2AF0 /* InfoViewController.swift in Sources */,
-				B3410BC627F396AB001E2AF0 /* WalletsViewController.swift in Sources */,
 				B3DB9AF427FCC4A100E12021 /* WalletsStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
