@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CD48384F3E3FF045E844B08 /* Pods_Uallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94EFDCDDECA1654FDF453B8 /* Pods_Uallet.framework */; };
+		B3410BA727EE4D12001E2AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BA627EE4D12001E2AF0 /* AppDelegate.swift */; };
+		B3410BA927EE4D12001E2AF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BA827EE4D12001E2AF0 /* SceneDelegate.swift */; };
+		B3410BAB27EE4D12001E2AF0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BAA27EE4D12001E2AF0 /* LoginViewController.swift */; };
+		B3410BAE27EE4D12001E2AF0 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3410BAC27EE4D12001E2AF0 /* LoginViewController.storyboard */; };
+		B3410BB027EE4D13001E2AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3410BAF27EE4D13001E2AF0 /* Assets.xcassets */; };
+		B3410BB327EE4D13001E2AF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3410BB127EE4D13001E2AF0 /* LaunchScreen.storyboard */; };
+		B3410BBB27F38D64001E2AF0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BBA27F38D64001E2AF0 /* API.swift */; };
+		B3410BBE27F3963B001E2AF0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BBC27F3963B001E2AF0 /* HomeViewController.swift */; };
+		B3410BBF27F3963B001E2AF0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3410BBD27F3963B001E2AF0 /* HomeViewController.xib */; };
+		B3410BC227F3969B001E2AF0 /* DashboardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BC027F3969B001E2AF0 /* DashboardsViewController.swift */; };
+		B3410BC327F3969B001E2AF0 /* DashboardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3410BC127F3969B001E2AF0 /* DashboardsViewController.xib */; };
+		B3410BC627F396AB001E2AF0 /* WalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BC427F396AB001E2AF0 /* WalletsViewController.swift */; };
+		B3410BC727F396AB001E2AF0 /* WalletsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3410BC527F396AB001E2AF0 /* WalletsViewController.xib */; };
+		B3410BCA27F396B8001E2AF0 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BC827F396B8001E2AF0 /* InfoViewController.swift */; };
+		B3410BCB27F396B8001E2AF0 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3410BC927F396B8001E2AF0 /* InfoViewController.xib */; };
+		B3410BCD27F4CEC4001E2AF0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BCC27F4CEC4001E2AF0 /* Storage.swift */; };
+		B3410BCF27F4E176001E2AF0 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BCE27F4E176001E2AF0 /* MainTabViewController.swift */; };
+		B3410BD427F4F5AC001E2AF0 /* NuevaWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3410BD227F4F5AC001E2AF0 /* NuevaWalletViewController.swift */; };
+		B3410BD527F4F5AC001E2AF0 /* NuevaWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3410BD327F4F5AC001E2AF0 /* NuevaWalletViewController.xib */; };
+		B3675EF227F79C73009D87E3 /* APIBitcoinStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3675EF127F79C72009D87E3 /* APIBitcoinStruct.swift */; };
+		B394086427F7908200A38B15 /* APIDolarStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B394086327F7908200A38B15 /* APIDolarStruct.swift */; };
+		B3DB9AEB27FB71FE00E12021 /* APICotizacionesPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB9AEA27FB71FE00E12021 /* APICotizacionesPromises.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42E993F206BF1007F2C06312 /* Pods-Uallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uallet.release.xcconfig"; path = "Target Support Files/Pods-Uallet/Pods-Uallet.release.xcconfig"; sourceTree = "<group>"; };
+		B3410BA327EE4D12001E2AF0 /* Uallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3410BA627EE4D12001E2AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3410BA827EE4D12001E2AF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B3410BAA27EE4D12001E2AF0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B3410BAD27EE4D12001E2AF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
+		B3410BAF27EE4D13001E2AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3410BB227EE4D13001E2AF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3410BB427EE4D13001E2AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3410BBA27F38D64001E2AF0 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B3410BBC27F3963B001E2AF0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B3410BBD27F3963B001E2AF0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B3410BC027F3969B001E2AF0 /* DashboardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardsViewController.swift; sourceTree = "<group>"; };
+		B3410BC127F3969B001E2AF0 /* DashboardsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardsViewController.xib; sourceTree = "<group>"; };
+		B3410BC427F396AB001E2AF0 /* WalletsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsViewController.swift; sourceTree = "<group>"; };
+		B3410BC527F396AB001E2AF0 /* WalletsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletsViewController.xib; sourceTree = "<group>"; };
+		B3410BC827F396B8001E2AF0 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		B3410BC927F396B8001E2AF0 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		B3410BCC27F4CEC4001E2AF0 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		B3410BCE27F4E176001E2AF0 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		B3410BD227F4F5AC001E2AF0 /* NuevaWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaWalletViewController.swift; sourceTree = "<group>"; };
+		B3410BD327F4F5AC001E2AF0 /* NuevaWalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NuevaWalletViewController.xib; sourceTree = "<group>"; };
+		B3675EF127F79C72009D87E3 /* APIBitcoinStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBitcoinStruct.swift; sourceTree = "<group>"; };
+		B394086327F7908200A38B15 /* APIDolarStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDolarStruct.swift; sourceTree = "<group>"; };
+		B3DB9AEA27FB71FE00E12021 /* APICotizacionesPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICotizacionesPromises.swift; sourceTree = "<group>"; };
+		D94EFDCDDECA1654FDF453B8 /* Pods_Uallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC604E0C181A9EAE69CA4CCF /* Pods-Uallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uallet.debug.xcconfig"; path = "Target Support Files/Pods-Uallet/Pods-Uallet.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3410BA027EE4D12001E2AF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CD48384F3E3FF045E844B08 /* Pods_Uallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2981408A652510863263A3C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D94EFDCDDECA1654FDF453B8 /* Pods_Uallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B3D38AF148A85C3A71A027B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC604E0C181A9EAE69CA4CCF /* Pods-Uallet.debug.xcconfig */,
+				42E993F206BF1007F2C06312 /* Pods-Uallet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3410B9A27EE4D12001E2AF0 = {
+			isa = PBXGroup;
+			children = (
+				B3410BA527EE4D12001E2AF0 /* Uallet */,
+				B3410BA427EE4D12001E2AF0 /* Products */,
+				2B3D38AF148A85C3A71A027B /* Pods */,
+				2981408A652510863263A3C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3410BA427EE4D12001E2AF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3410BA327EE4D12001E2AF0 /* Uallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3410BA527EE4D12001E2AF0 /* Uallet */ = {
+			isa = PBXGroup;
+			children = (
+				B3410BA627EE4D12001E2AF0 /* AppDelegate.swift */,
+				B3410BA827EE4D12001E2AF0 /* SceneDelegate.swift */,
+				B3410BB427EE4D13001E2AF0 /* Info.plist */,
+				B3DB9AE927FB71C900E12021 /* APIs */,
+				B3410BD127F4E18F001E2AF0 /* Utilitarios */,
+				B3410BD027F4E188001E2AF0 /* Recursos */,
+				B3DB9AEC27FB727C00E12021 /* ViewControllers */,
+			);
+			path = Uallet;
+			sourceTree = "<group>";
+		};
+		B3410BD027F4E188001E2AF0 /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				B3410BAF27EE4D13001E2AF0 /* Assets.xcassets */,
+			);
+			path = Recursos;
+			sourceTree = "<group>";
+		};
+		B3410BD127F4E18F001E2AF0 /* Utilitarios */ = {
+			isa = PBXGroup;
+			children = (
+				B3410BCC27F4CEC4001E2AF0 /* Storage.swift */,
+			);
+			path = Utilitarios;
+			sourceTree = "<group>";
+		};
+		B3DB9AE927FB71C900E12021 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				B3410BBA27F38D64001E2AF0 /* API.swift */,
+				B394086327F7908200A38B15 /* APIDolarStruct.swift */,
+				B3675EF127F79C72009D87E3 /* APIBitcoinStruct.swift */,
+				B3DB9AEA27FB71FE00E12021 /* APICotizacionesPromises.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		B3DB9AEC27FB727C00E12021 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3DB9AED27FB72A500E12021 /* Base */,
+				B3410BC027F3969B001E2AF0 /* DashboardsViewController.swift */,
+				B3410BC127F3969B001E2AF0 /* DashboardsViewController.xib */,
+				B3410BC427F396AB001E2AF0 /* WalletsViewController.swift */,
+				B3410BC527F396AB001E2AF0 /* WalletsViewController.xib */,
+				B3410BC827F396B8001E2AF0 /* InfoViewController.swift */,
+				B3410BC927F396B8001E2AF0 /* InfoViewController.xib */,
+				B3410BBC27F3963B001E2AF0 /* HomeViewController.swift */,
+				B3410BBD27F3963B001E2AF0 /* HomeViewController.xib */,
+				B3410BCE27F4E176001E2AF0 /* MainTabViewController.swift */,
+				B3410BD227F4F5AC001E2AF0 /* NuevaWalletViewController.swift */,
+				B3410BD327F4F5AC001E2AF0 /* NuevaWalletViewController.xib */,
+				B3410BB127EE4D13001E2AF0 /* LaunchScreen.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B3DB9AED27FB72A500E12021 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B3410BAA27EE4D12001E2AF0 /* LoginViewController.swift */,
+				B3410BAC27EE4D12001E2AF0 /* LoginViewController.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3410BA227EE4D12001E2AF0 /* Uallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3410BB727EE4D13001E2AF0 /* Build configuration list for PBXNativeTarget "Uallet" */;
+			buildPhases = (
+				31AC8D60C746A77DCB8C6B95 /* [CP] Check Pods Manifest.lock */,
+				B3410B9F27EE4D12001E2AF0 /* Sources */,
+				B3410BA027EE4D12001E2AF0 /* Frameworks */,
+				B3410BA127EE4D12001E2AF0 /* Resources */,
+				D8F139747484A6FC50032FFE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Uallet;
+			productName = Uallet;
+			productReference = B3410BA327EE4D12001E2AF0 /* Uallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3410B9B27EE4D12001E2AF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					B3410BA227EE4D12001E2AF0 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = B3410B9E27EE4D12001E2AF0 /* Build configuration list for PBXProject "Uallet" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3410B9A27EE4D12001E2AF0;
+			productRefGroup = B3410BA427EE4D12001E2AF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3410BA227EE4D12001E2AF0 /* Uallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3410BA127EE4D12001E2AF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3410BB327EE4D13001E2AF0 /* LaunchScreen.storyboard in Resources */,
+				B3410BC327F3969B001E2AF0 /* DashboardsViewController.xib in Resources */,
+				B3410BB027EE4D13001E2AF0 /* Assets.xcassets in Resources */,
+				B3410BAE27EE4D12001E2AF0 /* LoginViewController.storyboard in Resources */,
+				B3410BBF27F3963B001E2AF0 /* HomeViewController.xib in Resources */,
+				B3410BD527F4F5AC001E2AF0 /* NuevaWalletViewController.xib in Resources */,
+				B3410BCB27F396B8001E2AF0 /* InfoViewController.xib in Resources */,
+				B3410BC727F396AB001E2AF0 /* WalletsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31AC8D60C746A77DCB8C6B95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Uallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8F139747484A6FC50032FFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uallet/Pods-Uallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uallet/Pods-Uallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Uallet/Pods-Uallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3410B9F27EE4D12001E2AF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3410BBE27F3963B001E2AF0 /* HomeViewController.swift in Sources */,
+				B3410BAB27EE4D12001E2AF0 /* LoginViewController.swift in Sources */,
+				B3410BA727EE4D12001E2AF0 /* AppDelegate.swift in Sources */,
+				B3410BBB27F38D64001E2AF0 /* API.swift in Sources */,
+				B394086427F7908200A38B15 /* APIDolarStruct.swift in Sources */,
+				B3410BA927EE4D12001E2AF0 /* SceneDelegate.swift in Sources */,
+				B3410BD427F4F5AC001E2AF0 /* NuevaWalletViewController.swift in Sources */,
+				B3DB9AEB27FB71FE00E12021 /* APICotizacionesPromises.swift in Sources */,
+				B3410BCF27F4E176001E2AF0 /* MainTabViewController.swift in Sources */,
+				B3675EF227F79C73009D87E3 /* APIBitcoinStruct.swift in Sources */,
+				B3410BCD27F4CEC4001E2AF0 /* Storage.swift in Sources */,
+				B3410BC227F3969B001E2AF0 /* DashboardsViewController.swift in Sources */,
+				B3410BCA27F396B8001E2AF0 /* InfoViewController.swift in Sources */,
+				B3410BC627F396AB001E2AF0 /* WalletsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3410BAC27EE4D12001E2AF0 /* LoginViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3410BAD27EE4D12001E2AF0 /* Base */,
+			);
+			name = LoginViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		B3410BB127EE4D13001E2AF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3410BB227EE4D13001E2AF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3410BB527EE4D13001E2AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3410BB627EE4D13001E2AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3410BB827EE4D13001E2AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC604E0C181A9EAE69CA4CCF /* Pods-Uallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Uallet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uala.clase-3-Uallet.Uallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3410BB927EE4D13001E2AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42E993F206BF1007F2C06312 /* Pods-Uallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Uallet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uala.clase-3-Uallet.Uallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3410B9E27EE4D12001E2AF0 /* Build configuration list for PBXProject "Uallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3410BB527EE4D13001E2AF0 /* Debug */,
+				B3410BB627EE4D13001E2AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3410BB727EE4D13001E2AF0 /* Build configuration list for PBXNativeTarget "Uallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3410BB827EE4D13001E2AF0 /* Debug */,
+				B3410BB927EE4D13001E2AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3410B9B27EE4D12001E2AF0 /* Project object */;
+}

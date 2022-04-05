@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Uallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" image="onboarding" id="Zqr-Xy-ReF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="905"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="2bk-SW-1hU" appends="YES" id="omW-ka-Dfe"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="isologo" translatesAutoresizingMaskIntoConstraints="NO" id="LJq-0d-j8d">
+                                <rect key="frame" x="138" y="170" width="139" height="55"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Qzx-nB-LEQ" appends="YES" id="qL4-9S-Mag"/>
+                                </connections>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Lp-4X-mKA">
+                                <rect key="frame" x="30" y="375" width="354" height="103.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de Usuario" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPt-86-N9i">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zc9-Wk-99v">
+                                        <rect key="frame" x="0.0" y="66.5" width="354" height="37"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4N-Em-b8h">
+                                <rect key="frame" x="30" y="558.5" width="354" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Iniciar Sesión"/>
+                                <connections>
+                                    <action selector="btnIniciarSesion" destination="BYZ-38-t0r" eventType="touchUpInside" id="1j2-qP-RNn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LJq-0d-j8d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="6yV-lm-C7g"/>
+                            <constraint firstItem="1Lp-4X-mKA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="7T6-I6-2Ru"/>
+                            <constraint firstItem="1Lp-4X-mKA" firstAttribute="top" secondItem="LJq-0d-j8d" secondAttribute="bottom" constant="150" id="HfE-FU-K7P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Lp-4X-mKA" secondAttribute="trailing" constant="30" id="MYR-DC-fA2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LJq-0d-j8d" secondAttribute="trailing" constant="137" id="UbE-bz-Cey"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J4N-Em-b8h" secondAttribute="trailing" constant="30" id="VYy-zz-ckJ"/>
+                            <constraint firstItem="J4N-Em-b8h" firstAttribute="top" secondItem="1Lp-4X-mKA" secondAttribute="bottom" constant="80" id="aZX-0S-CSJ"/>
+                            <constraint firstItem="J4N-Em-b8h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="lHN-Sm-tlf"/>
+                            <constraint firstItem="LJq-0d-j8d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="126" id="x6Z-rV-F5M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputNombreUsuario" destination="uPt-86-N9i" id="rdt-2c-n0c"/>
+                        <outlet property="inputPassword" destination="zc9-Wk-99v" id="se4-kj-6pl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="2bk-SW-1hU">
+                    <connections>
+                        <action selector="gestureCerrarTeclado:" destination="BYZ-38-t0r" id="GM7-7u-VQQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="Qzx-nB-LEQ">
+                    <connections>
+                        <action selector="autocompletar:" destination="BYZ-38-t0r" id="EBp-g2-eSX"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="isologo" width="100" height="55"/>
+        <image name="onboarding" width="375" height="667"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
