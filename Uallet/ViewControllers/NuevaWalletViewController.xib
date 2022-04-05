@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NuevaWalletViewController" customModule="Uallet" customModuleProvider="target">
             <connections>
+                <outlet property="monedas" destination="PE8-F5-5on" id="t0M-fd-94O"/>
                 <outlet property="txtFieldNombreWallet" destination="h7H-J3-HYz" id="iKD-VU-dgu"/>
                 <outlet property="txtFieldSaldo" destination="55e-bi-czU" id="JAc-Fo-T4c"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -26,40 +27,37 @@
                         <segment title="BTC"/>
                         <segment title="ARS"/>
                     </segments>
-                    <connections>
-                        <action selector="segContMonedas:" destination="-1" eventType="valueChanged" id="yDG-jd-Ikc"/>
-                    </connections>
                 </segmentedControl>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="DFg-Aj-oFB">
-                    <rect key="frame" x="35" y="356" width="344" height="194"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="r8e-fT-ca8">
+                    <rect key="frame" x="30" y="378" width="354" height="150"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="7Cx-35-tTz">
-                            <rect key="frame" x="0.0" y="0.0" width="172" height="81.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="7Cx-35-tTz">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXb-2p-Aka">
-                                    <rect key="frame" x="0.0" y="0.0" width="61.5" height="20.5"/>
+                                    <rect key="frame" x="0.0" y="7" width="83.5" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese nuevo nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7H-J3-HYz">
-                                    <rect key="frame" x="0.0" y="47.5" width="172" height="34"/>
+                                    <rect key="frame" x="110.5" y="0.0" width="243.5" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                 </textField>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="ZHw-31-bLu">
-                            <rect key="frame" x="0.0" y="112.5" width="114.5" height="81.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="ZHw-31-bLu">
+                            <rect key="frame" x="0.0" y="116" width="354" height="34"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKU-wd-dPL">
-                                    <rect key="frame" x="0.0" y="0.0" width="43" height="20.5"/>
+                                    <rect key="frame" x="0.0" y="7" width="82.5" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese saldo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="55e-bi-czU">
-                                    <rect key="frame" x="0.0" y="47.5" width="114.5" height="34"/>
+                                    <rect key="frame" x="109.5" y="0.0" width="244.5" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad"/>
                                 </textField>
@@ -71,11 +69,11 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.72736801717048061" green="0.7579869060857406" blue="0.86078917980194092" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="DFg-Aj-oFB" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="0Pa-ue-tSU"/>
+                <constraint firstItem="r8e-fT-ca8" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="LS4-U4-AdS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PE8-F5-5on" secondAttribute="trailing" constant="30" id="VUX-GM-q6m"/>
                 <constraint firstItem="PE8-F5-5on" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="YLA-em-xzD"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DFg-Aj-oFB" secondAttribute="trailing" constant="35" id="dF4-dk-Y1d"/>
-                <constraint firstItem="DFg-Aj-oFB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="dKj-xu-iPP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r8e-fT-ca8" secondAttribute="trailing" constant="30" id="cpd-V8-ZES"/>
+                <constraint firstItem="r8e-fT-ca8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="wFi-FH-EW4"/>
                 <constraint firstItem="PE8-F5-5on" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="yRt-fn-wmE"/>
             </constraints>
             <point key="canvasLocation" x="132" y="96"/>
