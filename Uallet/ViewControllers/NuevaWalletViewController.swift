@@ -9,6 +9,13 @@ import UIKit
 
 class NuevaWalletViewController: UIViewController {
     
+    //Solución temporal para que las wallets nuevas renderizen
+    var callback: ((Bool) -> Void)?
+        
+    func set(callback: @escaping (Bool)->Void) {
+        self.callback = callback
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,24 +33,20 @@ class NuevaWalletViewController: UIViewController {
         dismiss(animated: true)
     }
     
-//    func monedaElegida() {
-//        if monedas.selectedSegmentIndex == 0 {
-//            return .Dólares
-//        } else if monedas.selectedSegmentIndex == 1 {
-//            return .Bitcoin
-//        } else {
-//            return .Pesos
-//        }
-//    }
-    
     @objc func guardarNuevaWallet() {
-        // Por ahora las arregla al storage de wallets pero no las muestra en pantalla
+
         let nombreIngresado = txtFieldNombreWallet.text!
-        let saldoIngresado = txtFieldSaldo.text!
+        let saldoIngresado = Double(txtFieldSaldo.text!) ?? 0
+        let monedaIngresada = Monedas.elegirMonedaSegun(index: monedas.selectedSegmentIndex)
         
-        let nuevaWallet = Wallet(nombre: nombreIngresado, saldo: Double(saldoIngresado)!, moneda: .Pesos)
+        let nuevaWallet = Wallet(nombre: nombreIngresado, saldo: saldoIngresado, moneda: monedaIngresada)
         WalletsStorage.shared.add(nuevaWallet: nuevaWallet)
+        
         dismiss(animated: true)
+        
+        if let callback = callback {
+            callback(true)
+        }
     }
     
     

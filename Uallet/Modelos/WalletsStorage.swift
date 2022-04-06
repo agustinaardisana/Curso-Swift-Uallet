@@ -14,10 +14,31 @@ class WalletsStorage {
     
     var wallets: [Wallet] = []
     
+    let KEY_WALLETS = "wallets_json"
+    
     init() {
-        // wallets hardcodeadas para empezar
-        wallets.append(Wallet(nombre: "Ualá", saldo: 10000, moneda: .Pesos))
-        wallets.append(Wallet(nombre: "Lemon", saldo: 0.0001, moneda: .Bitcoin))
+       load()
+    }
+    
+    func load() {
+        if let dataJson = UserDefaults.standard.data(forKey: KEY_WALLETS) {
+            let decodificar = JSONDecoder()
+            do {
+                wallets = try decodificar.decode([Wallet].self, from: dataJson)
+            } catch {
+                print("No se pudo decodificar le JSON")
+            }
+        }
+    }
+    
+    func save() {
+        let codificar = JSONEncoder()
+        if let dataJson = try? codificar.encode(wallets) {
+            UserDefaults.standard.set(dataJson, forKey: KEY_WALLETS)
+        } else {
+            print("No se pudo convertir a JSON")
+        }
+        
     }
     
     func add(nuevaWallet: Wallet) {

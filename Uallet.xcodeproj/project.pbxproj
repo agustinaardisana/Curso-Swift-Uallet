@@ -35,6 +35,8 @@
 		B3DB9AF827FCD6F500E12021 /* WalletsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3DB9AF627FCD6F500E12021 /* WalletsViewController.xib */; };
 		B3DB9AFB27FCD94500E12021 /* WalletViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB9AF927FCD94500E12021 /* WalletViewCell.swift */; };
 		B3DB9AFC27FCD94500E12021 /* WalletViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3DB9AFA27FCD94500E12021 /* WalletViewCell.xib */; };
+		B3DE368927FE3157003B4AD0 /* DetalleWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE368727FE3157003B4AD0 /* DetalleWalletViewController.swift */; };
+		B3DE368A27FE3157003B4AD0 /* DetalleWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3DE368827FE3157003B4AD0 /* DetalleWalletViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		B3DB9AF627FCD6F500E12021 /* WalletsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletsViewController.xib; sourceTree = "<group>"; };
 		B3DB9AF927FCD94500E12021 /* WalletViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewCell.swift; sourceTree = "<group>"; };
 		B3DB9AFA27FCD94500E12021 /* WalletViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletViewCell.xib; sourceTree = "<group>"; };
+		B3DE368727FE3157003B4AD0 /* DetalleWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleWalletViewController.swift; sourceTree = "<group>"; };
+		B3DE368827FE3157003B4AD0 /* DetalleWalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleWalletViewController.xib; sourceTree = "<group>"; };
 		D94EFDCDDECA1654FDF453B8 /* Pods_Uallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC604E0C181A9EAE69CA4CCF /* Pods-Uallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uallet.debug.xcconfig"; path = "Target Support Files/Pods-Uallet/Pods-Uallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +183,8 @@
 				B3410BD327F4F5AC001E2AF0 /* NuevaWalletViewController.xib */,
 				B3DB9AF927FCD94500E12021 /* WalletViewCell.swift */,
 				B3DB9AFA27FCD94500E12021 /* WalletViewCell.xib */,
+				B3DE368727FE3157003B4AD0 /* DetalleWalletViewController.swift */,
+				B3DE368827FE3157003B4AD0 /* DetalleWalletViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 				B3DB9AFC27FCD94500E12021 /* WalletViewCell.xib in Resources */,
 				B3410BB027EE4D13001E2AF0 /* Assets.xcassets in Resources */,
 				B3410BAE27EE4D12001E2AF0 /* LoginViewController.storyboard in Resources */,
+				B3DE368A27FE3157003B4AD0 /* DetalleWalletViewController.xib in Resources */,
 				B3410BBF27F3963B001E2AF0 /* HomeViewController.xib in Resources */,
 				B3DB9AF827FCD6F500E12021 /* WalletsViewController.xib in Resources */,
 				B3410BD527F4F5AC001E2AF0 /* NuevaWalletViewController.xib in Resources */,
@@ -340,6 +347,7 @@
 				B3410BC227F3969B001E2AF0 /* DashboardsViewController.swift in Sources */,
 				B3DB9AF027FCBC4900E12021 /* Monedas.swift in Sources */,
 				B3410BCA27F396B8001E2AF0 /* InfoViewController.swift in Sources */,
+				B3DE368927FE3157003B4AD0 /* DetalleWalletViewController.swift in Sources */,
 				B3DB9AF427FCC4A100E12021 /* WalletsStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,8 +494,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B345A6Z2FK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Uallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -502,6 +512,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uala.clase-3-Uallet.Uallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,8 +525,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B345A6Z2FK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Uallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -530,6 +543,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uala.clase-3-Uallet.Uallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

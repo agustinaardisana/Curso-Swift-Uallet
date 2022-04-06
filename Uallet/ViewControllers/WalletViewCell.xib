@@ -15,9 +15,42 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8l0-Vd-9Qb">
+                        <rect key="frame" x="16" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvx-2c-avh">
+                        <rect key="frame" x="268" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9B-dg-3rC">
+                        <rect key="frame" x="78" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8l0-Vd-9Qb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="5bQ-F9-zAk"/>
+                    <constraint firstItem="f9B-dg-3rC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Mmz-fC-oLW"/>
+                    <constraint firstAttribute="trailing" secondItem="uvx-2c-avh" secondAttribute="trailing" constant="10" id="Uaf-tM-Opw"/>
+                    <constraint firstItem="uvx-2c-avh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="apv-X7-fKp"/>
+                    <constraint firstItem="f9B-dg-3rC" firstAttribute="leading" secondItem="8l0-Vd-9Qb" secondAttribute="trailing" constant="20" id="cXi-9W-fJs"/>
+                    <constraint firstItem="8l0-Vd-9Qb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xG9-dy-jG7"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="132" y="79"/>
+            <connections>
+                <outlet property="lblMoneda" destination="f9B-dg-3rC" id="VaJ-OS-lHI"/>
+                <outlet property="lblNombre" destination="8l0-Vd-9Qb" id="qCs-VD-sis"/>
+                <outlet property="lblSaldo" destination="uvx-2c-avh" id="pHV-2W-2Ce"/>
+            </connections>
+            <point key="canvasLocation" x="-22" y="58"/>
         </tableViewCell>
     </objects>
 </document>

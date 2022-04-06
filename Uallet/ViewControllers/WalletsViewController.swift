@@ -27,9 +27,16 @@ class WalletsViewController: UITableViewController {
     //MARK: Eventos de UI
     
     @objc func agregarWallet() {
-           let nuevaWalletVC = NuevaWalletViewController()
-           let nuevaWalletNavigationVC = UINavigationController(rootViewController: nuevaWalletVC)
-           present(nuevaWalletNavigationVC, animated: true)
+        let nuevaWalletVC = NuevaWalletViewController()
+        
+        // Callback para que aparezca la celda al cerrar el modal
+        nuevaWalletVC.set { grabo in
+            if grabo {
+                self.tableView.reloadData()
+            }
+        }
+        let nuevaWalletNavigationVC = UINavigationController(rootViewController: nuevaWalletVC)
+        present(nuevaWalletNavigationVC, animated: true)
        }
 
     // MARK: - Table view data source
@@ -50,7 +57,9 @@ class WalletsViewController: UITableViewController {
         
         let wallet = WalletsStorage.shared.wallets[indexPath.row]
         
-        cell.textLabel!.text = wallet.nombre
+        cell.lblNombre.text = wallet.nombre
+        cell.lblSaldo!.text = "\(wallet.saldo)"
+        cell.lblMoneda?.text = "(\(wallet.moneda.rawValue))"
 
         return cell
     }

@@ -23,9 +23,9 @@
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PE8-F5-5on">
                     <rect key="frame" x="30" y="194" width="354" height="32"/>
                     <segments>
+                        <segment title="ARS"/>
                         <segment title="USD"/>
                         <segment title="BTC"/>
-                        <segment title="ARS"/>
                     </segments>
                 </segmentedControl>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="r8e-fT-ca8">

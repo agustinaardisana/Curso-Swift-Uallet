@@ -20,4 +20,7 @@ class WalletViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBOutlet weak var lblSaldo: UILabel!
+    @IBOutlet weak var lblMoneda: UILabel?
+    @IBOutlet weak var lblNombre: UILabel!
 }

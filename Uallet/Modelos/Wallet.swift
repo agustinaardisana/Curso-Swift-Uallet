@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Wallet {
+struct Wallet: Codable {
     var nombre: String
     var saldo: Double
     var moneda: Monedas
