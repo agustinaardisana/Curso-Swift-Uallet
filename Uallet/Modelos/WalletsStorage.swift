@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 class WalletsStorage {
     
@@ -16,8 +17,14 @@ class WalletsStorage {
     
     let KEY_WALLETS = "wallets_json"
     
+    private var listeners: [()->Void] = []
+    
     init() {
        load()
+    }
+    
+    func actualizarInfo(listener: @escaping ()-> Void) {
+        listeners.append(listener)
     }
     
     func load() {
@@ -28,6 +35,15 @@ class WalletsStorage {
             } catch {
                 print("No se pudo decodificar le JSON")
             }
+        }
+    }
+    
+    func notificarActualizaciones() {
+        // Hubo cambios en los datos
+        save()
+        // recorro todos los listeners y los invoco
+        for listener in listeners {
+            listener()
         }
     }
     
@@ -43,11 +59,30 @@ class WalletsStorage {
     
     func add(nuevaWallet: Wallet) {
         wallets.append(nuevaWallet)
-        print(wallets)
+        notificarActualizaciones()
     }
     
-    func delete() {
-        // borrar wallet
+    func delete(wallet: Wallet) {
+        wallets.removeAll {walletActual in
+            return walletActual == wallet
+        }
+        notificarActualizaciones()
+    }
+    
+    func editarSaldo(wallet: Wallet, saldo: Double) {
+        // version imperativa
+        for (i, walletActual) in wallets.enumerated() {
+            if walletActual == wallet {
+                wallets[i].saldo = saldo
+            }
+        }
+        notificarActualizaciones()
+    }
+    
+    func walletsPromise() -> Promise<[Wallet]> {
+        return Promise { resolver in
+            resolver.fulfill(self.wallets)
+        }
     }
     
 }

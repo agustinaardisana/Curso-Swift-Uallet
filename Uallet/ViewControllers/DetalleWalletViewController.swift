@@ -11,8 +11,6 @@ class DetalleWalletViewController: UIViewController {
     
     var wallet: Wallet?
     
-    @IBAction func txtfieldSaldo(_ sender: Any) {
-    }
     @IBOutlet weak var lblMoneda: UILabel!
     
     @IBOutlet weak var txtSaldo: UITextField!
@@ -30,12 +28,16 @@ class DetalleWalletViewController: UIViewController {
     @IBAction func btnEliminar(_ sender: Any) {
         let alerta = UIAlertController(title: "Eliminar Wallet", message: "¿Estás seguro/a que querés eliminar la wallet? No se puede recuperar", preferredStyle: .alert)
         alerta.addAction(UIAlertAction(title: "SI, Eliminar", style: .destructive, handler: { _ in
-            WalletsStorage.shared.delete()
+            WalletsStorage.shared.delete(wallet: self.wallet!)
             self.navigationController?.popViewController(animated: true)
         }))
         
         alerta.addAction(UIAlertAction(title: "NO, Cancelar", style: .cancel))
         present(alerta, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        WalletsStorage.shared.editarSaldo(wallet: self.wallet!, saldo: Double(txtSaldo.text!) ?? 0)
     }
     
     /*

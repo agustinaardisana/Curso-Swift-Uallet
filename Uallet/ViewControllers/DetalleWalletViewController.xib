@@ -33,9 +33,6 @@
                             <rect key="frame" x="162" y="0.0" width="192" height="38.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <action selector="txtfieldSaldo:" destination="-1" eventType="editingDidEnd" id="2ap-Pv-cHM"/>
-                            </connections>
                         </textField>
                     </subviews>
                 </stackView>

@@ -22,6 +22,11 @@ class WalletsViewController: UITableViewController {
         // Registrar una celda custom
         let nib = UINib(nibName: "WalletViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
+        
+        // Registro un listener para cuando los datos cambien
+        WalletsStorage.shared.actualizarInfo {
+            self.tableView.reloadData()
+        }
     }
     
     //MARK: Eventos de UI
@@ -30,11 +35,11 @@ class WalletsViewController: UITableViewController {
         let nuevaWalletVC = NuevaWalletViewController()
         
         // Callback para que aparezca la celda al cerrar el modal
-        nuevaWalletVC.set { grabo in
-            if grabo {
-                self.tableView.reloadData()
-            }
-        }
+//        nuevaWalletVC.set { grabo in
+//            if grabo {
+//                self.tableView.reloadData()
+//            }
+//        }
         let nuevaWalletNavigationVC = UINavigationController(rootViewController: nuevaWalletVC)
         present(nuevaWalletNavigationVC, animated: true)
        }
@@ -47,6 +52,10 @@ class WalletsViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return WalletsStorage.shared.wallets.count
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
 
     override func tableView(_ tableView: UITableView,
