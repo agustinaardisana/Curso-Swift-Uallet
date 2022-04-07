@@ -46,5 +46,8 @@ class WalletsStorage {
         print(wallets)
     }
     
+    func delete() {
+        // borrar wallet
+    }
     
 }

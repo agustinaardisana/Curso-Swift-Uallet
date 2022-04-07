@@ -63,6 +63,17 @@ class WalletsViewController: UITableViewController {
 
         return cell
     }
+    
+    // MARK: Ir a vista detalle
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let walletSeleccionada = WalletsStorage.shared.wallets[indexPath.row]
+        
+        let detalleVC = DetalleWalletViewController()
+        detalleVC.wallet = walletSeleccionada
+        
+        navigationController?.pushViewController(detalleVC, animated: true)
+    }
 
     /*
     // Override to support conditional editing of the table view.
